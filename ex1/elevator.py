@@ -32,13 +32,13 @@ class elevator:
         return self._pos
 
     def goTo(self, floor):
-        if (floor<self.getPos())
+        if (floor<self.getPos()):
             self._state = -1
-        if (floor > self.getPos())
+        if (floor > self.getPos()):
             self._state = 1
-        if (floor == self.getPos())
+        if (floor == self.getPos()):
             self._state = 0
-        else
+        else:
             self._state = -2
 
     def getSpeed(self):
