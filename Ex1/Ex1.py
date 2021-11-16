@@ -4,6 +4,7 @@ from elevator import elevator
 from building import building
 from call import call
 import json
+import csv
 
 def from_json(build_file):
         try:
@@ -27,6 +28,17 @@ def from_json_elev(build_file):
         except IOError as er:
             print(er)
 
-if __name__ == '__main__':
+#if __name__ == '__main__':
     # b1 = from_json(sys.argv[1])
     # print(b1)
+def csv_to_calls(calls_file):
+  #  if __name__ == '__main__':
+        calls = []
+        with open(calls_file) as file:
+            csvreader = csv.reader(file)
+            header = next(csvreader)
+            for row in csvreader:
+                c = call( _time=row[1], _src=int(row[2]), _dest=int(row[3]),
+                                _elev=int(row[5]))
+                calls.append(c)
+        print (calls)
