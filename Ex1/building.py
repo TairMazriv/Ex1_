@@ -2,7 +2,7 @@ import json
 
 class building:
 
-    def __init__(self, _minFloor, _maxFloor, _elevators) :
+    def __init__(self, _minFloor, _maxFloor, _elevators):
         self._minFloor = _minFloor
         self._maxFloor = _maxFloor
         self._elevators = _elevators

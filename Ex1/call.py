@@ -1,6 +1,6 @@
 class call:
 
-    def __init__(self, _time, _src, _dest, _elev) :
+    def __init__(self, _time, _src, _dest, _elev):
         self._time = _time
         self._src = _src
         self._dest = _dest

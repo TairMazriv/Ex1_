@@ -10,8 +10,8 @@ class elevator:
         self._openTime = _openTime
         self._startTime = _startTime
         self._stopTime = _stopTime
-        self._state = 0
-        self._pos = 0
+        self._state = _state
+        self._pos = _pos
         # self._id = b.get_elevators[i]["_id"]
         # self._speed = b.get_elevators[i]["_speed"]
         # self._minFloor = b.get_elevators[i]["_minFloor"]
