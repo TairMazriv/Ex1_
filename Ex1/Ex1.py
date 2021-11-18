@@ -22,7 +22,7 @@ def csv_to_calls(calls_file):
             csvreader = csv.reader(file)
             header = next(csvreader)
             for row in csvreader:
-                c = call( _time=row[1], _src=int(row[2]), _dest=int(row[3]),
+                c = call(_str = row[0], _time=row[1], _src=int(row[2]), _dest=int(row[3]), _status = row[4],
                                 _elev=int(row[5]))
                 calls.append(c)
         return calls
@@ -74,12 +74,3 @@ for call in out:
 with open('out.csv', 'w', newline="") as file:
     write = csv.writer(file)
     write.writerows(new_out)
-
-
-# if __name__ == '__main__':
-    # b2 = from_json(sys.argv[1])
-    # print(algo(sys.argv[1],sys.argv[2]))
-    # c = csv_to_calls("Calls_a.csv")
-    # print(b1)
-    # print(algo(sys.argv[1], "Calls_a.csv"))
-    # print(time(b1[0], c[0].get_src(), c[0].get_dest()))
