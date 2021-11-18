@@ -16,3 +16,4 @@ If the reading increases, we will check on all the elevators that are currently 
 If the reading decreases, we will check on all the elevators that are currently on the floor higher than the source of the reading who will perform the reading the fastest using the auxiliary function. For all elevators that are currently on a floor lower than the original floor of the reading we will set a random time. At the end we will select the shortest time and place for the same call the elevator that will perform the call in the shortest time.
 After we have selected the elevator we will add the source floor and destination floor of the call to the list of floors where the elevator stops it. 
 
+![image](https://user-images.githubusercontent.com/80627174/142486356-65bf6873-1625-4a57-8173-4f7056571629.png)
