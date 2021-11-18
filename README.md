@@ -16,4 +16,5 @@ If the call up, we will check on all the elevators that are currently on the flo
 If the call down, we will check on all the elevators that are currently on the floor higher than the source of the call who will perform the call the fastest using the auxiliary function. For all elevators that are currently on a floor lower than the original floor of the call we will set a random time. At the end we will select the shortest time and place for the same call the elevator that will perform the call in the shortest time.
 After we have selected the elevator we will add the source floor and destination floor of the call to the list of floors where the elevator stops it. 
 
+uml:
 ![image](https://user-images.githubusercontent.com/80627174/142486356-65bf6873-1625-4a57-8173-4f7056571629.png)
