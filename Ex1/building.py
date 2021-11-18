@@ -5,13 +5,10 @@ class building:
     def __init__(self, _minFloor, _maxFloor, _elevators):
         self._minFloor = _minFloor
         self._maxFloor = _maxFloor
-        self._elevators = _elevators
+        self._elevators = _elevators.copy()
         self._arr = []
-        elevators = []
-        for e in _elevators:
-            elevators.append(e)
-        self.elevators = elevators.copy()
-        self.elev_num = len(self.elevators)
+        self.elev_num = len(self._elevators)
+        # Array of the current locations of each elevator (initially all locations will be defined as 0th floor):
         self.arr = []
         for i in range(0, self.elev_num):
             self.arr.append(0)
